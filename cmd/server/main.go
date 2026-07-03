@@ -19,6 +19,7 @@ func main() {
 				taskHandler.HandleList(w, r)
 			default:
 				http.Error(w, "Método não permitido", http.StatusMethodNotAllowed)
+		}
 	})
 
 	fmt.Println("Servidor rodando com sucesso na porta 8080...")
