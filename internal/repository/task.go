@@ -1,7 +1,6 @@
 package repository
 
 import (
-	"errors"
 	"go-agenda-agil/internal/model"
 	"sync"
 	"time"
@@ -28,7 +27,7 @@ func (r *TaskRepository) Create(title string) model.Task {
 		ID: r.nextID,
 		Title: title,
 		Done: false,
-		CreatedAt: time.now(),
+		CreatedAt: time.Now(),
 	}
 
 	r.tasks = append(r.tasks, task)
