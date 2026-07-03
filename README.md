@@ -1,5 +1,5 @@
-# Go Lang Agenda Agil
-## A lightweight, high-performance REST API built in Go (Golang) implementing clean architecture principles.
+# Go Lang Agenda
+A lightweight, high-performance REST API built in Go (Golang) implementing clean architecture principles.
 
 ## 🏁 Getting Started
 
