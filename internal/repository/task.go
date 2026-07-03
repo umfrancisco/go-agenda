@@ -12,3 +12,32 @@ type TaskRepository struct {
 	tasks []model.Task
 	nextID int
 }
+
+func NewTaskRepository() *TaskRepository {
+	return &TaskRepository {
+		tasks: []model.Task{},
+		nextID: 1,
+	}
+}
+
+func (r *TaskRepository) Create(title string) model.Task {
+	r.mu.Lock()
+	defer r.mu.Unlock()
+
+	task := model.Task {
+		ID: r.nextID,
+		Title: title,
+		Done: false,
+		CreatedAt: time.now(),
+	}
+
+	r.tasks = append(r.tasks, task)
+	r.nextID++
+	return task
+}
+
+func (r *TaskRepository) GetAll() []model.Task {
+	r.mu.Lock()
+	defer r.mu.Unlock()
+	return r.tasks
+}
