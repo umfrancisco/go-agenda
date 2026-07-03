@@ -12,10 +12,10 @@ func main() {
 	taskHandler := handler.NewTaskHandler(repo)
 
 	http.HandleFunc("/tasks", func(w http.ResponseWriter, r *http.Request) {
-		switch r.method {
+		switch r.Method {
 			case http.MethodPost:
 				taskHandler.HandleCreate(w, r)
-			case httpMethodGet:
+			case http.MethodGet:
 				taskHandler.HandleList(w, r)
 			default:
 				http.Error(w, "Método não permitido", http.StatusMethodNotAllowed)
