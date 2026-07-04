@@ -1,22 +1,23 @@
 # Go Lang Agenda
-A lightweight, high-performance REST API built in Go (Golang) implementing clean architecture principles.
 
-## 🏁 Getting Started
+Este projeto é uma API REST de uma agenda de tarefas com foco em boas práticas de arquitetura, organização de código e padrões utilizados no mercado. Ele simula o registro de tarefas com nome, se foi concluída ou não e quando foi criada.
+
+## Configurações
 
 ### Prerequisites
-- [Go](https://go.dev/doc/install) installed on your machine.
+- [Go](https://go.dev/doc/install) instalado em sua máquina.
 
-### Installation & Running
+### Instalação e execução
 
-1. Clone or navigate to the project directory:
- cd go-agenda-agil
+1. Clone ou navegue para o diretório do projeto:
+ cd go-agenda
 
-2. Start the HTTP Server
+2. Inicie o servidor HTTP
  go run cmd/server/main.go
 
 ### JSON example
 <pre>
 {
-  "title": "Finish Go Lang tutorial"
+  "title": "Iniciar o tutorial de Go Lang"
 }
 </pre>
