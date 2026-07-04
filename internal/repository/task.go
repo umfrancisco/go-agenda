@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"go-agenda-agil/internal/model"
+	"go-agenda/internal/model"
 	"sync"
 	"time"
 )

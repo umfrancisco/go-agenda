@@ -2,7 +2,7 @@ package handler
 
 import (
 	"encoding/json"
-	"go-agenda-agil/internal/repository"
+	"go-agenda/internal/repository"
 	"net/http"
 )
 

@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"go-agenda-agil/internal/handler"
-	"go-agenda-agil/internal/repository"
+	"go-agenda/internal/handler"
+	"go-agenda/internal/repository"
 	"net/http"
 )
 
@@ -23,7 +23,8 @@ func main() {
 	})
 
 	fmt.Println("Servidor rodando com sucesso na porta 8080...")
-	if err := http.ListenAndServe(":8080", nil); err != nil {
+	err := http.ListenAndServe(":8080", nil);
+	if err != nil {
 		fmt.Printf("Erro ao iniciar o servidor: %v\n", err)	
 	}
 }
