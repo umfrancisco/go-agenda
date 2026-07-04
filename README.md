@@ -4,7 +4,7 @@ Este projeto é uma API REST de uma agenda de tarefas com foco em boas práticas
 
 ## Configurações
 
-### Prerequisites
+### Pre-requisitos
 - [Go](https://go.dev/doc/install) instalado em sua máquina.
 
 ### Instalação e execução
